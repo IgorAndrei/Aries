@@ -4,7 +4,7 @@ $connection = mysql_connect("localhost", "root", "");
 // Selecting Database
 $db = mysql_select_db("sga", $connection);
 mysql_query("SET NAMES 'utf8'");
-if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1800)) {
+if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 60)) {
     // last request was more than 30 minutes ago
     session_unset();     // unset $_SESSION variable for the run-time 
     session_destroy();   // destroy session data in storage
@@ -27,14 +27,8 @@ $login_session5 =$row['nombre_carrera'];
 $login_session6 =$row['nombre_plan'];
 $login_session7 =$row['nombre_tipo_usuario'];
 
-
-
-
-
-
-
 if(!isset($login_session)){
 mysql_close($connection); // Closing Connection
-header('Location: index.php'); // Redirecting To Home Page
+header('Location: ../index.php'); // Redirecting To Home Page
 }
 ?>
