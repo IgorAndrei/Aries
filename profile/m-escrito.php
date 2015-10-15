@@ -29,7 +29,7 @@ include('../cookies/session.php');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><div id="nombre_plataforma">Aries <div id="sub_nombre_plataforma"> Manejo de Habilidades Blandas</div> </div></a>
+                <a class="navbar-brand" href="profile.php"><div id="nombre_plataforma">Aries <div id="sub_nombre_plataforma"> Manejo de Habilidades Blandas</div> </div></a>
             </div>
    
             <ul class="nav navbar-top-links navbar-right">

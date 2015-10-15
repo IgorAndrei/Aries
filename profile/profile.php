@@ -29,7 +29,7 @@ include('../cookies/session.php');
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php"><div id="nombre_plataforma">Aries<div id="sub_nombre_plataforma"> Manejo de Habilidades Blandas</div> </div></a>
+                <a class="navbar-brand" href="profile.php"><div id="nombre_plataforma">Aries<div id="sub_nombre_plataforma"> Manejo de Habilidades Blandas</div> </div></a>
             </div>
    
             <ul class="nav navbar-top-links navbar-right">
@@ -265,19 +265,19 @@ include('../cookies/session.php');
                                 <a href="#">Creatividad e Innovación</a>
                             </li>
                             <li>
-                                <a href="#">Actuación Etica</a>
+                                <a href="#">Orientación a la Calidad</a>
                             </li>
                             <li>
-                                <a href="#">Comunicación Oral y escrita<span class="fa arrow"></span></a>
+                                <a href="#"><?php echo $login_session3;?><span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="#">Nivel 1</a>
+                                        <a href="#">Nivel 1 (<?php echo $login_session4;?>)</a>
                                     </li>
                                     <li>
-                                        <a href="#">Nivel 2</a>
+                                        <a href="#">Nivel 2(<?php echo $login_session4;?>)</a>
                                     </li>
                                     <li>
-                                        <a href="#">Nivel 3</a>
+                                        <a href="#">Nivel 3(<?php echo $login_session4;?>)</a>
                                     </li>
 
                                 </ul>
