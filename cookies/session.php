@@ -4,7 +4,15 @@ $connection = mysql_connect("localhost", "root", "");
 // Selecting Database
 $db = mysql_select_db("sga", $connection);
 mysql_query("SET NAMES 'utf8'");
+
 session_start();// Starting Session
+if (!isset($_SESSION['CREATED'])) {
+    $_SESSION['CREATED'] = time();
+} else if (time() - $_SESSION['CREATED'] > 1800) {
+    // session started more than 30 minutes ago
+    session_regenerate_id(true);    // change session ID for the current session and invalidate old session ID
+    $_SESSION['CREATED'] = time();  // update creation time
+}
 // Storing Session
 $user_check=$_SESSION['login_user'];
 // SQL Query To Fetch Complete Information Of User
