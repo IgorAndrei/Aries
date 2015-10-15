@@ -1,1 +1,3 @@
 select a.nombres,a.apellidos,a.ul_inicio,c.nombre_competencia,c.nivel,d.nombre_carrera,e.nombre_plan,f.nombre_tipo_usuario from user as A inner join carrera_competencia as B on a.id_carrera = B.id_carrera inner join competencias as C on c.id=b.id_carrera inner join carrera as D on a.id_carrera = D.id inner join plan as e on a.id_plan=e.id inner join tipo_usuario as f on a.tipo_usuario = f.id WHERE a.usuario='17248536'
+
+esta sentencia no se si este buena 
