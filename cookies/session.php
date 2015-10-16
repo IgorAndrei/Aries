@@ -6,15 +6,24 @@ $db = mysql_select_db("sga", $connection);
 mysql_query("SET NAMES 'utf8'");
 
 session_start();// Starting Session
+// Storing Session
+$user_check=$_SESSION['login_user'];
 if (!isset($_SESSION['CREATED'])) {
     $_SESSION['CREATED'] = time();
 } else if (time() - $_SESSION['CREATED'] > 1800) {
+	
+	session_destroy();
+	header('Location: ../index.php'); // Redirecting To Home Page
+
+	
+	
     // session started more than 30 minutes ago
     session_regenerate_id(true);    // change session ID for the current session and invalidate old session ID
     $_SESSION['CREATED'] = time();  // update creation time
 }
-// Storing Session
-$user_check=$_SESSION['login_user'];
+
+
+
 // SQL Query To Fetch Complete Information Of User
 $ses_sql=mysql_query("select a.nombres,a.apellidos,a.ul_inicio,c.nombre_competencia,c.nivel,d.nombre_carrera,e.nombre_plan,f.nombre_tipo_usuario from user as A
  inner join carrera_competencia as B on a.id_carrera = B.id_carrera inner join competencias as C on c.id=b.id_competencia 
@@ -32,6 +41,6 @@ $login_session7 =$row['nombre_tipo_usuario'];
 
 if(!isset($login_session)){
 mysql_close($connection); // Closing Connection
-header('Location: index.php'); // Redirecting To Home Page
+header('Location: ../index.php'); // Redirecting To Home Page
 }
 ?>

@@ -201,13 +201,13 @@ button:active {
 
 .connect a.facebook { background: url(../img/ico/f_00.png) center center no-repeat;}
 .connect a.twitter { background: url(../img/ico/t_00.png) center center no-repeat;}
-.connect a.linkdl { background: url(../img/ico/m_00.png) center center no-repeat;}
-.connect a.email { background: url(../img/ico/l_00.png) center center no-repeat;}
+.connect a.linkdl { background: url(../img/ico/l_00.png) center center no-repeat;}
+.connect a.email { background: url(../img/ico/m_00.png) center center no-repeat;}
 
 
 
 .connect a.facebook:hover {background: url(../img/ico/f_01.png) center center no-repeat;}
 .connect a.twitter:hover {background: url(../img/ico/t_01.png) center center no-repeat;}
-.connect a.linkdl:hover {background: url(../img/ico/m_01.png) center center no-repeat;}
-.connect a.email:hover {background: url(../img/ico/l_01.png) center center no-repeat;}
+.connect a.linkdl:hover {background: url(../img/ico/l_01.png) center center no-repeat;}
+.connect a.email:hover {background: url(../img/ico/m_01.png) center center no-repeat;}
 

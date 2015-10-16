@@ -309,8 +309,10 @@ include('../cookies/session.php');
 						
                     
                     <li>
-                    <div id="tipo_nivel">Estudiante</div>  <!--  <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>-->					<div id="tipo_nivel">Carrera</div>
-					<div id="tipo_nivel">Plan</div>
+                    <div id="tipo_nivel"><?php echo $login_session7; ?></div> 
+                     <!--  <a href="empty.html"><i class="fa fa-fw fa-file"></i> Empty Page</a>-->			
+                     <div id="tipo_nivel_carrera"><?php echo $login_session5;?></div>
+					<div id="tipo_nivel"><?php echo $login_session6; ?></div>
                     </li>
                 </ul>
 

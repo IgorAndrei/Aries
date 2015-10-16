@@ -48,7 +48,7 @@ header("location: profile/profile.php");
             <div>
           	<div class="error"><span>+</span></div>
             
-            <span><?php echo $error; ?></span> </div>
+            <span ><?php echo $error; ?></span> </div>
             </form>
             </div>
           <div class="connect">
@@ -56,8 +56,8 @@ header("location: profile/profile.php");
 
                     <a class="facebook" href=" https://www.facebook.com/SporeGroup"></a>
                     <a class="twitter" href="https://twitter.com/SporeGroup"></a>
-					<a class="linkdl" href=""></a>
 					<a class="email" href="mailto:contacto@sporegroup.cl"></a>
+				<!--	<a class="email" href="mailto:contacto@sporegroup.cl"></a>-->
                     
                 </p>
             </div>
